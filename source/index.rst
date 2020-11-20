@@ -10,6 +10,7 @@ Welcome to Convect's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   time_series_api.rst
 
 
 Indices and tables
