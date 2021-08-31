@@ -1,0 +1,41 @@
+site_name: Convect Documentation
+theme:
+  favicon: https://convect.ai/static/about/images/favicon.ico
+  logo: https://convect.ai/static/about/images/logo-white.png
+  name: 'material'
+  palette:
+    primary: indigo
+
+repo_url: https://github.com/convect-ai/docs
+site_url: https://convect.ai
+edit_uri: ""
+site_description: 'Documentation for Convect APIs'
+markdown_extensions:
+  - codehilite
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - mdx_include:
+      base_path: docs/examples/
+
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.4.4/dist/mermaid.min.js
+
+nav:
+  - 'Overview': index.md
+  - 'Automated forecasting':
+    - 'Overview': forecast/overview.md
+    - 'Prepare the data': forecast/data-prepare.md
+    - 'Running the forecast': forecast/run-forecast.md
+    - 'Evaluating the model': forecast/run-backtest.md
+  - 'Supply-Demand planning': 
+    - 'Overview': flowopt/overview.md
+    - 'Prepare the data': flowopt/data-prepare.md
+  - 'Tutorials':
+    - 'M5 forecasting': tutorials/m5.md
+    - 'Custom forecasting pipeline': tutorials/custom-pipeline.md
+  - 'API references': https://forecast.convect.ai/api/schema/redoc/
