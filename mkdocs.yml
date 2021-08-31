@@ -1,7 +1,6 @@
 site_name: Convect Documentation
 theme:
   favicon: https://convect.ai/static/about/images/favicon.ico
-  logo: https://convect.ai/static/about/images/logo-white.png
   name: 'material'
   palette:
     primary: indigo
