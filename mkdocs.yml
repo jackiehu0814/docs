@@ -1,6 +1,6 @@
 site_name: Convect Documentation
 theme:
-  favicon: https://convect.ai/static/about/images/favicon.ico
+  favicon: https://i2.wp.com/convect.ai/wp-content/uploads/2021/08/cropped-logo-e1629758098785.png?fit=192,192&ssl=1
   name: 'material'
   palette:
     primary: indigo
