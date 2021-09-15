@@ -5,10 +5,9 @@
 
 ## Introduction
 
-Convect AI Decision API is a collection of out-of-box APIs to support the most common decision problems in Supply Chain Optimization space. 
-The goal is to let Convect manage the heavy lifting of building and tuning algorithms, allocating computing resources for your decision problems, so you can quickly add intelligence when developing supply chain decision applications.
+Convect™ AI Decision API is a collection of out-of-box APIs that supports the most common decision problems in Supply Chain Optimization. The goal is to let Convect™ take care of the heavy-lifting part of building and tuning algorithms & allocating computing resources, so you can load light and add intelligence easily when developing supply chain decision applications.
 
-Specifically, Convect currently provides APIs to solve two types of problems:
+Specifically, Convect™ currently provides APIs to solve two types of problems:
 
 * [Automated forecasting](/forecast/overview)
 * [Supply-demand planning](/flowopt/overview)
@@ -16,14 +15,14 @@ Specifically, Convect currently provides APIs to solve two types of problems:
 
 ## Quickstart
 
-Convect AI implements the [REST](https://blog.hubspot.com/website/what-is-rest-api) style APIs to enable users to build and trigger model runs for decision problems programmatically.
-For a more comprehensive reference on the available APIs, please see [reference](https://forecast.convect.ai/api/schema/redoc/).
+Convect™ implements the [REST](https://blog.hubspot.com/website/what-is-rest-api) style APIs to enable users to activate models that solve decision problems programmatically. For a more comprehensive reference of the available APIs, please see [reference](https://forecast.convect.ai/api/schema/redoc/).
 
-### Obtaining an API credentials
 
-Register on [Convect Platform](https://forecast.convect.ai/), go to the account settings page to obtain a pair of API `id` and `secrets`. Or contact [Convect support](mailto:hi@convect.ai) to obtain a demo key.
+### Obtaining API credentials
 
-Once you have your `client_id` and `client_secret`, before calling the API, obtain an access token by sending a `POST` request
+1. Register on [Convect Platform](https://forecast.convect.ai/)
+2. Go to the account settings page to obtain a pair of API `id` and `secrets`. Or contact [Convect support](mailto:hi@convect.ai) to obtain a demo key
+3. Once you have your `client_id` and `client_secret`, before calling the API, obtain an access token by sending a `POST` request
 
 ```bash
 curl --request POST \
@@ -41,18 +40,19 @@ and get a response
 }
 ```
 
-Then you can attach the token in the following API calls.
+4. Now you can attach the token in the following API calls.
+
 
 ### Calling the API
 
-Attach the returned token in every header of the requests you send to a Convect API. For example, set `Authorization: Bearer {RETURNED_TOKEN}` in the header.
+* Attach the returned token in every header of the requests you send to a Convect™ API. For example, set `Authorization: Bearer {RETURNED_TOKEN}` in the header.
 
-Convect APIs also accept and return `json` type data, so you can set `Accept: application/json` and `Content-type: application/json` in your header as well.
+* Convect™ APIs also accept and return `json` type data, so you can set `Accept: application/json` and `Content-type: application/json` in your header as well.
 
 
-### Example - Automated forecasting
+### Example - Automated Forecasting
 
-Here is an example of training and generating forecast by calling the automated forecasting APIs.
+Here is an example of training and generating forecasts by calling the automated forecasting APIs.
 
 === "python"
     ```python
