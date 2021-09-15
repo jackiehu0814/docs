@@ -1,30 +1,29 @@
 
-## Dataset types supported
+## Dataset Types Supported
 
-Convect Forecast supports the following types of datasets:
+Convect™ Forecast supports the following types of datasets:
 
 * Target time series
 * Related time series 
 * Item meta information 
 
-**Target time series** data is the only required dataset type need to be provided to build a forecasting model. It records the time series values for an entity at different history timestamps. For example, in a retailing setting, it captures the unit sold for each product at different history dates.
+**Target time series** data is the only dataset type needed to build a forecasting model. The dataset records the time series values for an entity at different historical timestamps. For example, for an retailer, the data captures the unit sold for each product at different dates.
 
-**Related time series** data captures time varying values that are not direct targets to be forecasted associated with entities. For example, it may record the price of a product on each date. 
+**Related time series** data captures time-varying values that are not direct targets to be forecasted associated with entities. For example, the data may record the price of a product on each date. 
 
-**Item meta information** provides additional information that is static across time about the entity to be forecasted.
-For example, it may contain categorical information such as brands, categories and vendors, about entities.
+**Item meta information** provides additional information static across time about the entity to be forecasted. For example, the data may contain categorical information such as brands, categories, and vendors of entities.
 
-## Data formats
+## Data Formats
 
-All 3 types of datasets require one or multiple columns that indicate the identifiers about entities. For example, in the retail setting, these columns may include a *SKU* plus a *store* id that uniquely define the identity of an entity to be forecasted.
+All 3 types of datasets require one or multiple columns that indicate the identifiers of entities. For example, for an retailer, these columns may include a *SKU* plus a *store* id that uniquely define the identity of an entity to be forecasted.
 
 ### Target time series
 
 The dataset requires at least 3 columns:
 
-* 1 or more columns serve as the key column(s) mentioned above
-* 1 timestamp column marking when the observation of the target time series value was recorded
-* 1 value column storing the actual value of the time series
+* 1 or more columns that serve as the key column(s) mentioned above
+* 1 timestamp column that marks when the observation was recorded
+* 1 value column that stores the actual value of the time series
 
 For example
 
@@ -41,9 +40,9 @@ where `model` is the key column of the entity; `week` is the timestamp column; `
 
 Similarly to target time series data, the dataset requires at least 3 columns: 
 
-* 1 or more columns serve as the key column(s) mentioned above
-* 1 timestamp column marking when the observation of the target time series value was recorded
-* 1 or more value columns storing the actual values of the related time series values
+* 1 or more columns that serve as the key column(s) mentioned above
+* 1 timestamp column that marks when the observation was recorded
+* 1 or more value columns that store the actual values of the related time series values
 
 For example
 
@@ -60,8 +59,8 @@ where `model` is the key column of the entity; `week` is the timestamp column; `
 
 Item meta information requires at least 2 columns:
 
-* 1 or more columns serve as the key column(s) mentioned above
-* 1 or more value columns storing some meta information about the entity
+* 1 or more columns that serve as the key column(s) mentioned above
+* 1 or more value columns that store some meta information about the entity
 
 For example
 
@@ -77,7 +76,7 @@ where `model` is the key column of the entity; `brand` and `category` are the me
 
 ## Calling Datagroup APIs
 
-Once you have the datasets prepared in the described formats, the first step towards building a model on top is to declare those datasets by calling the `datagroup` APIs.
+Once you have the datasets prepared in the described formats, the first step toward building a model on top is to declare those datasets by calling the `datagroup` APIs.
 
 ### Upload the datasets
 
@@ -87,7 +86,7 @@ Before calling the APIs, it's better to make datasets available as remote urls. 
 * Upload to a share drive such as Dropbox, Google Drive and generate a sharing url
 * Self host it at a file server (e.g, samba)
 
-### Declare the datasets using API
+### Declare Datasets Using API
 
 **Step1**. Create a `datagroup`
 
