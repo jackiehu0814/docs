@@ -5,7 +5,7 @@
 
 Backtesting is a technique to go back to the past and generate a forecast result at a *cutoff* date, then compare the result with the actual observations to compute the accuracy metrics of a model.
 
-For example, if I would like to generate the sales forecast for a store during the coming Thanksgiving season, a good backtesting strategy is to go back 1 year, to a date prior to Thanksgiving, and generate a forecast result. Then compare it with last year's Thanksgiving sales to gain an understanding how my model is likely to perform for this year, based on last year's performance.
+For example, if I would like to generate the sales forecast for a store during the coming Thanksgiving season, a good backtesting strategy is to go back 1 year, to a date prior to Thanksgiving, and to generate a forecast result. Then compare the result with last year's Thanksgiving sales to gain an understanding how my model is likely to perform for this year based on last year's performance.
 
 ## Set up a backtesting
 
