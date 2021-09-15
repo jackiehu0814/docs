@@ -23,7 +23,7 @@ DEMO_KEY = "YOUR_API_KEY"
 HEADER = {
     "Accept": "application/json",
     "Content-type": "application/json",
-    "Authorization": "Bearer: {}".format(DEMO_KEY),
+    "Authorization": "Bearer {}".format(DEMO_KEY),
 }
 
 payload = {
@@ -36,6 +36,7 @@ payload = {
 resp = requests.post(
     os.path.join(BASE_ENDPOINT, "backtest-configs/"),
     json=payload,
+    headers=HEADER
 )
 
 config_id = resp.json()["id]
@@ -48,6 +49,7 @@ payload = {"backtest_config": config_id}
 resp = requests.post(
     os.path.join(BASE_ENDPOINT, "backtesters/"),
     json=payload,
+    headers=HEADER
 )
 job_id = resp.json()["id]
 ```
@@ -57,6 +59,7 @@ And you can query the status of the run similarly to the normal forecast runs by
 ```python
 resp = requests.get(
     os.path.join(BASE_ENDPOINT, "backtesters", f"{job_id}/"),
+    headers=HEADER
 )
 print(resp.json())
 ```
