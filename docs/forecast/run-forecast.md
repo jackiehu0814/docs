@@ -9,12 +9,12 @@ For example, below code sets up a task that outputs the consecutive 14-week pred
 
 === "python"
     ```python
-    {!> forecast-quickstart.py [ln:48-62] !}
+    {!> forecast-quickstart.py [ln:50-66] !}
     ```
 
 === "curl"
     ```bash
-    {!> forecast-quickstart.sh [ln:35-49] !}
+    {!> forecast-quickstart.sh [ln:35-50] !}
     ```
 
 ## Trigger the forecast
@@ -23,12 +23,12 @@ Once a config is set up, we can trigger the actual forecast run by calling `POST
 
 === "python"
     ```python
-    {!> forecast-quickstart.py [ln:65-69] !}
+    {!> forecast-quickstart.py [ln:68-75] !}
     ```
 
 === "curl"
     ```bash
-    {!> forecast-quickstart.sh [ln:52-55] !}
+    {!> forecast-quickstart.sh [ln:53-62] !}
     ```
 
 ## Retrieve the result
@@ -37,12 +37,12 @@ Once a run is triggered, query the status of the run by calling `GET` endpoint `
 
 === "python"
     ```python
-    {!> forecast-quickstart.py [ln:72-77] !}
+    {!> forecast-quickstart.py [ln:77-98] !}
     ```
 
 === "curl"
     ```bash
-    {!> forecast-quickstart.sh [ln:59-61] !}
+    {!> forecast-quickstart.sh [ln:65-68] !}
     ```
 
 Once the returned `status` is indicated as `Succeeded`, you can read the result from the output path specified when setting up the forecast config.

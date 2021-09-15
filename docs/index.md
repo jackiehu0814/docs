@@ -9,8 +9,8 @@ Convect™ AI Decision API is a collection of out-of-box APIs that supports the 
 
 Specifically, Convect™ currently provides APIs to solve two types of problems:
 
-* [Automated forecasting](/forecast/overview)
-* [Supply-demand planning](/flowopt/overview)
+* [Automated forecasting](./forecast/overview.md)
+* [Supply-demand planning](./flowopt/overview.md)
 
 
 ## Quickstart
@@ -21,8 +21,8 @@ Convect™ implements the [REST](https://blog.hubspot.com/website/what-is-rest-a
 ### Obtaining API credentials
 
 1. Register on [Convect Platform](https://forecast.convect.ai/)
-2. Go to the account settings page to obtain a pair of API `id` and `secrets`. Or contact [Convect support](mailto:hi@convect.ai) to obtain a demo key
-3. Once you have your `client_id` and `client_secret`, before calling the API, obtain an access token by sending a `POST` request
+2. Go to the account settings page to obtain a pair of API `id` and `secrets`. Or contact [Convect Support](mailto:hi@convect.ai) to obtain a demo key
+3. Once you have your `client_id` and `client_secret`, before calling the API, obtain an access token by sending a `POST` request as 
 
 ```bash
 curl --request POST \
@@ -40,7 +40,7 @@ and get a response
 }
 ```
 
-4. Now you can attach the token in the following API calls.
+4. Now you can attach the token as specified in `access_token` field in the following API calls.
 
 
 ### Calling the API

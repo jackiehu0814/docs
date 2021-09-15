@@ -94,7 +94,7 @@ Before calling the APIs, it's better to make datasets available as remote urls. 
 
 === "python"
     ```python
-    {!> forecast-quickstart.py [ln:1-23] !}
+    {!> forecast-quickstart.py [ln:1-25] !}
     ```
 
 === "curl"
@@ -108,12 +108,12 @@ The next step is to associate individual `dataset` object to a `datagroup`. When
 
 === "python"
     ```python
-    {!> forecast-quickstart.py [ln:26-44] !}
+    {!> forecast-quickstart.py [ln:27-47] !}
     ```
 
 === "curl"
     ```python
-    {!> forecast-quickstart.sh [ln:14-31] !}
+    {!> forecast-quickstart.sh [ln:14-32] !}
     ```
 
 * `dataset_type` specifies the type of the dataset. Available options are `TARGET_TIME_SERIES`, `RELATED_TIME_SERIES`, and `ITEM_META`.
